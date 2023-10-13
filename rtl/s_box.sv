@@ -5,7 +5,7 @@ module s_box(
     output logic [7:0] c
 );
     
-logic [7:0] c;
+
 
    always @(a)
     case (a)
