@@ -16,15 +16,13 @@ assign final_out = out_key ^ s2;
 
 endmodule
 
-module lastround_tb;
-  // Declare signals for the testbench
-  reg clk;
-  reg [3:0] rc;
-  reg [127:0] round_in;
-  reg [127:0] last_key_in;
+module lastround_tb(
+  reg clk,
+  reg [3:0] rc,
+  reg [127:0] round_in,
+  reg [127:0] last_key_in,
   wire [127:0] final_out;
-  
-  // Instantiate the DUT
+)
   lastround dut (
     .clk(clk),
     .rc(rc),
@@ -33,30 +31,30 @@ module lastround_tb;
     .final_out(final_out)
   );
 
-  // Clock generation
+  
   always begin
-    #5 clk = ~clk;
+     clk = ~clk;
   end
 
-  // Test stimulus
+  
   initial begin
-    // Initialize inputs
+    
     clk = 0;
-    rc = 4'b1010; // Modify with the desired value
-    round_in = 128'h0123456789ABCDEF0123456789ABCDEF; // Modify with the desired value
-    last_key_in = 128'hFEDCBA9876543210FEDCBA9876543210; // Modify with the desired value
+    rc = 4'b1010;  
+    round_in = 128'h0123456789ABCDEF0123456789ABCDEF; 
+    last_key_in = 128'hFEDCBA9876543210FEDCBA9876543210;
 
-    // Wait for some time
+    
     #10;
 
-    // Check the output
+    
     if (final_out == 128'hEXPECTED_RESULT) begin
       $display("Test PASSED");
     end else begin
       $display("Test FAILED");
     end
 
-    // End the simulation
+    
     $finish;
   end
 endmodule
