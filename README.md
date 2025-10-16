@@ -1,6 +1,9 @@
 # Description
 AES-128 block written in SystemVerilog. Learn more about AES [here](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
+> [!IMPORTANT]
+> Please check out [CONTRIBUTING.md](./CONTRIBUTING.md)
+
 # Setup
 ### Option-1: Use Quartus Prime Lite 24.1 or Xilinx Vivado™ 2025.1
 
@@ -10,6 +13,10 @@ AES-128 block written in SystemVerilog. Learn more about AES [here](https://en.w
 ### Option-2: Yosys
 
 - Refer to this documentation for installation and usage guide [here](https://yosyshq.net/yosys/)
+
+### Option-3: Verilator 
+
+- Steps to install verilator [here](https://veripool.org/guide/latest/install.html) (git quick install is recommended)
 
 
 #### Contributor: Suhas K Viswanath
