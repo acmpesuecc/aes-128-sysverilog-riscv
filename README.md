@@ -2,13 +2,15 @@
 AES-128 block written in SystemVerilog. Learn more about AES [here](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
 # Setup
-## Option-1: Use Quartus Prime Lite 20.02 or Xilinx Vivado 18
+### Option-1: Use Quartus Prime Lite 24.1 or Xilinx Vivado™ 2025.1
 
-- Steps for installation of [Quartus Prime Lite](https://www.intel.com/content/www/us/en/software-kit/660907/intel-quartus-prime-lite-edition-design-software-version-20-1-1-for-windows.html)
-- Steps for installation of [Xilinx Vivado](https://docs.xilinx.com/v/u/en-US/dh0013-vivado-installation-and-licensing-hub)
+- Steps for installation of [Quartus Prime Lite](https://www.intel.com/content/www/us/en/software-kit/849770/intel-quartus-prime-lite-edition-design-software-version-24-1-for-windows.html)
+- Steps for installation of [Xilinx Vivado](https://www.xilinx.com/support/download.html)
 
-## Option-2: Yosys
+### Option-2: Yosys
 
 - Refer to this documentation for installation and usage guide [here](https://yosyshq.net/yosys/)
 
+
 #### Contributor: Suhas K Viswanath
+#### Maintainer: Keval P
